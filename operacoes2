@@ -1,4 +1,4 @@
-Def soma():
+def soma():
     n1= int(input("me diga um número: "))
     n2= int(input("me diga outro número: "))
     print(n1+n2)
