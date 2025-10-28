@@ -19,7 +19,7 @@ def multiplicacao ():
 def divisao ():
         n1 = int(input("Digite o primeiro número: "))
         n2 = int(input("Digite o segundo número: "))
-        if n1 or n2 == 0:
+        if n2 == 0:
             print("Esta é uma divsão por zero. O resultado é indeterminado. Por favor, tente outro cálculo.")
         else:
             print (f"{n1} / {n2} = {n1 / n2}")
