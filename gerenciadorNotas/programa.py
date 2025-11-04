@@ -1,7 +1,7 @@
-lfrom funcoes import *
+from funcoes import *
 
 listaNotas = []
-listaAlunos = {}
+listaAlunos = []
 
 while True:
     op = int(input("Digite 1 para adicionar um aluno, 2 para mostrar o relatório, 0 para sair: "))
@@ -12,8 +12,8 @@ while True:
             listaNotas.append(nota)
         media = calcularMedia(listaNotas)
         status = vericacao(media)
-        listaAlunos = {nome: [listaNotas, media, status]}
-       
+        dictAlunos = {nome: [listaNotas, media, status]}
+        listaAlunos.append(dictAlunos)
     if op == 2:
         print(listaAlunos)
     if op == 0:
