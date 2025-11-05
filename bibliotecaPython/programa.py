@@ -1,5 +1,7 @@
 from funcoes import *
 
+listaLivros = []
+
 while True:
     print(f"Adicionar livro = {1}")
     print(f"Exibir todos os livros = {2}")
@@ -8,14 +10,14 @@ while True:
     print(F"Sair = {0}")
     op = int(input("Digite a opção desejada: "))
     if op == 1:
-        adicionar_livro()
-    if op == 2:
-        exibir_livros()
-    if op == 3:
-        emprestar_livro()
-    if op == 4:
-        devolver_livro()
-    if op == 0:
+        adicionar_livro(listaLivros)
+    elif op == 2:
+        exibir_livros(listaLivros)
+    elif op == 3:
+        emprestar_livro(listaLivros)
+    elif op == 4:
+        devolver_livro(listaLivros)
+    elif op == 0:
         print("Finalizando...")
         break
     else:
