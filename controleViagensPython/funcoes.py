@@ -38,12 +38,12 @@ def viagem_mais_cara(listaViagens):
 
 
 def media_consumo(listaViagens):
-    consumos_total = None
-    consumos_soma = None
-    media = consumos_soma / consumos_total
+    consumos_total = 0
+    consumos_soma = 0
     for viagem in listaViagens:
         consumos_total += 1
         consumos_soma += viagem["Consumo"]
+    media = consumos_soma / consumos_total
     print(f"A média geral do consumo em R$ é: {media}")
     return listaViagens
 
