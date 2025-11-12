@@ -1,4 +1,5 @@
 from funcoes import *
+from tabulate import tabulate
 
 listaViagens = []
 
@@ -8,7 +9,7 @@ while True:
     if op == 1:
         registrar_viagens(listaViagens)
     elif op == 2:
-        exibir_viagens(listaViagens)
+        print(tabulate(exibir_viagens(listaViagens), headers="keys", tablefmt="grid"))
     elif op == 3:
         buscar_motorista(listaViagens)
     elif op == 4:
@@ -17,4 +18,4 @@ while True:
         media_consumo(listaViagens)
     elif op == 0:
         break
-    else: ValueError
+    else: print("Opção invlálida")
